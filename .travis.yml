@@ -1,0 +1,11 @@
+language: java
+jdk:
+- openjdk8
+
+addons:
+ sonarcloud:
+  organization: elenarfowler
+  token: f433ddb027f852a498ce03cc05375396c6aabb47
+script:
+- ant build
+- sonar-scanner
